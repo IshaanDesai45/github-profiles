@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7ef664e887.js" crossorigin="anonymous"></script>
+    <title>github profiler</title>
+</head>
+<body>
+    <nav class="navbar">    
+        <div class="container">
+            <div class="brandLogo">
+                <i class="fab fa-github"></i>
+                <p>Github Profiler</p>
+            </div>
+            <div class="searchBox">
+                <input id="searchProfile" type="text" class="search" placeholder="Search Profile" />
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="toogleSwitch">
+                <p class="dmLabel"> Dark Mode</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+        </div>
+    </nav>
+
+    <div id="info" class="info">
+        <p>Want out checkout a github profile??</p>
+        <p>just search above</p>
+    </div>
+    <div id="user-profile" class="display hidden">
+            
+        <img id="avatar"class ="avatar"src="https://avatars2.githubusercontent.com/u/46575231?v=4" alt="" srcset="">
+           
+            <p id="usernameHandle"class="usernameHandle">@IshaanDesai45</p>
+            <div class="personalDetails">
+                <p  class="name"><i class="fas fa-user"></i><span id="name">Ishaan Desai</span></p>
+                <p  class="place"><i class="fas fa-map-marker-alt"></i><span id="place">India</span></p>
+                <p  class="joinDate"><i class="far fa-calendar-alt"></i><span id="date">Joined March 10,2019</span></p>
+            </div>
+            <div class="githubDetails">
+                <div class="detailsCard">
+                    <h3 id="noOfRepo" class="number">15</h3>
+                    <h3 class="category">repository</h3>
+                </div>
+                <div class="detailsCard">
+                    <h3 id="followers" class="number">15</h3>
+                    <h3 class="category">followers</h3>
+                </div>
+                <div class="detailsCard">
+                    <h3 id="following" class="number">15</h3>
+                    <h3 class="category">following</h3>
+                </div>
+            </div>
+    </div>
+    <div id="repo-profile"class="displayRepos hidden">
+        <div class="container">
+            <div class="heading">
+                <p>Top repos</p>
+            </div>
+            <div id="repoContainer" class="repoContainer">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="./repoInfo.js"></script>
+    <script src="./main.js"></script>
+    <script src="./theme.js"></script>
+    
+</body>
+</html>
